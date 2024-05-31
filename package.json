@@ -22,7 +22,7 @@
     "pl/sql"
   ],
   "activationEvents": [
-    "onLanguage:sql"
+    "onLanguage:snowflake-sql"
   ],
   "contributes": {
     "configuration": {
