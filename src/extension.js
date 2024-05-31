@@ -24,7 +24,7 @@ const getConfig = ({ insertSpaces, tabSize }) => ({
 const format = (text, config) => sqlFormatter.format(text, config);
 
 module.exports.activate = () =>
-	vscode.languages.registerDocumentRangeFormattingEditProvider('sql', {
+	vscode.languages.registerDocumentRangeFormattingEditProvider('snowflake-sql', {
 		provideDocumentRangeFormattingEdits: (document, range, options) => [
 			vscode.TextEdit.replace(range, format(document.getText(range), getConfig(options)))
 		]
